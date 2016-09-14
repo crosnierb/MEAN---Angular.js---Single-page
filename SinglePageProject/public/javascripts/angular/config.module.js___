@@ -1,0 +1,12 @@
+app.config(function($routeProvider, $locationProvider){
+  console.log('babarin');
+  $routeProvider
+  .when('/', {
+    templateUrl: 'views/authentification/index',
+    controller: 'IndexCtrl',
+  })
+  .when('/login', {
+    templateUrl: 'views/authentification/login',
+    controller: 'LoginCtrl',
+  });
+});
